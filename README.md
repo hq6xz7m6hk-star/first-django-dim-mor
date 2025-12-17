@@ -1,1 +1,10 @@
-"g test" 
+# First django progect
+
+
+
+## Install
+
+
+### Run
+
+
