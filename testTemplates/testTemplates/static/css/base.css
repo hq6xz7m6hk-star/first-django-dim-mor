@@ -1,24 +1,24 @@
 .container {
 
-display: greed;
-greed-template-areas: "header header" "sidebar content";
+display: grid;
+grid-template-areas: "header header" "sidebar content";
 
 gap: 10px;
-greed-template-colums: 150px; 1fr;
-greed-template-rows: 50px; 1fr;
-
+grid-template-columns: 150px; 1fr;
+grid-template-rows: 50px; 1fr;
+}
 .header {
-    greed-area: header;
+    grid-area: header;
 
 }
 
 .sidebar {
-    greed-area: sidebar;
-    aline-self: start;
+    grid-area: sidebar;
+    align-self: start;
 }
 
 .content {
-     greed-area: content;
+     grid-area: content;
 }
 
 .item {
