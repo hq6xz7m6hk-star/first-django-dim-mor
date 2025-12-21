@@ -1,10 +1,7 @@
 .container {
 
 display: greed;
-greed-template-areas:
-
-        "header header"
-        "sidebar content";
+greed-template-areas: "header header" "sidebar content";
 
 gap: 10px;
 greed-template-colums: 150px; 1fr;

@@ -10,12 +10,6 @@ def main_page(request):
     data = {"menu": MENU, "title": title}
     return render(request, "./index.html", context=data)
 
-def catalog_page(request):
-
-    title = "Каталог"
-    data = {"menu": MENU, "title": title}
-    return render(request, "./catalog.html", context=data)
-
 def about_page(request):
 
     title = "О компании"
