@@ -1,5 +1,5 @@
 """
-URL configuration for myozon project.
+URL configuration for testTemplates project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/6.0/topics/http/urls/
@@ -15,19 +15,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, re_path
-from .view import *
+from django.urls import path
 
+from django.contrib import admin
+from django.urls import path
+from .views import *
 urlpatterns = [
-    path("", main_page),
-    path("product/", product),
-    path("product/<int:id>/", product),
-    path("product/<int:id>/<int:amount>/", product_amount),
-    path("product/<int:id>/<str:color>/", product),
-    path("category/", category),
+    path('', main_page),
+    path('catalog', catalog_page),
+    path('about', about_page),
 
-    re_path(r"^category/(?P<lang>[a-zA-Z]{2})/$", category),
 
 ]
-
-

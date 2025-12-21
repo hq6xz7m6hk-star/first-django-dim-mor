@@ -1,0 +1,34 @@
+.container {
+
+display: greed;
+greed-template-areas:
+
+        "header header"
+        "sidebar content";
+
+gap: 10px;
+greed-template-colums: 150px; 1fr;
+greed-template-rows: 50px; 1fr;
+
+.header {
+    greed-area: header;
+
+}
+
+.sidebar {
+    greed-area: sidebar;
+    aline-self: start;
+}
+
+.content {
+     greed-area: content;
+}
+
+.item {
+    border: 1px solid black;
+    padding: 5px;
+
+}
+
+
+}
