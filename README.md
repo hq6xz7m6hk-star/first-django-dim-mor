@@ -1,4 +1,4 @@
-# First django progect
+# django progect
 
 task1
 
